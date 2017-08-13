@@ -72,36 +72,36 @@ If we open `index.html` we can see an interactive coverage report of the app.
 ## Directory Layout
 
 ```
-angular-grid-example/                        --> all project files
+angular-grid-example/                   --> all project files
 	app/                            --> all of the source files for the application
-		js/                         --> all files of the app (template and logic)
-			controllers/            --> all controllers
-				example.controller.js
-				example2.controller.js
-                ...
-			directives/             --> all the directives
-				example.directive.js
-				example2.directive.js
-                ...
-			services/               --> all services
-				example.service.js
-                example2.service.js
-                ...
-		css/                        --> all css files
+	    js/                         --> all files of the app (template and logic)
+	        controllers/            --> all controllers
+			example.controller.js
+			example2.controller.js
+                	...
+		directives/             --> all the directives
+			example.directive.js
+			example2.directive.js
+                	...
+		services/               --> all services
+			example.service.js
+                	example2.service.js
+                	...
+		css/                    --> all css files
 			example.style.css    
 			example1.style.css
-            ...		
-		fonts/                      --> all fonts files
+            		...		
+		fonts/                  --> all fonts files
 			example.font.eot
-            example2.font.eot
+            		example2.font.eot
 			...
-		imgages/                    --> all image files
-			favicon/                --> favicon icon
-			favicon.icon 		    --> favicon icon
+		images/                 --> all image files
+			favicon/        --> favicon icon
+			favicon.icon 	--> favicon icon
 			...
-		app.js                      --> main application module
-		config.js                   --> main config file of app (load dependencies)
-		index.html                  --> app layout file (the main html template file of the app)
+		app.js                  --> main application module
+		config.js               --> main config file of app (load dependencies)
+		index.html              --> app layout file (the main html template file of the app)
 	node_modules/                   --> all npm dependencies
 		...
 	unit-test/                      --> all unit-test files
@@ -109,22 +109,16 @@ angular-grid-example/                        --> all project files
 		example2.controller.test.js
         example.service.test.js  
 		...
-	performance-test/               --> performance test files
-	    Test.html
-	    Test.js
-	    Answer.js
-	    Answer.2.js
-	    ...
 	coverage/                       --> coverage report
 	    ...
-	.bowerrc        --> bower configuration
-	.gitignore      --> list of folders and files that are ignored by git
-	.jshintrc       --> jshint config file
-	bower.json      --> declarations of bower dependencies (only client-side)
-	Gruntfile.js    --> declarations of grunt tasks
-	package.json    --> declarations of tools needed by the projects (npm)
-	README.md       --> this file
-	server.js       --> config file for running the server with node and express
+	.bowerrc        		--> bower configuration
+	.gitignore      		--> list of folders and files that are ignored by git
+	.jshintrc       		--> jshint config file
+	bower.json      		--> declarations of bower dependencies (only client-side)
+	Gruntfile.js    		--> declarations of grunt tasks
+	package.json    		--> declarations of tools needed by the projects (npm)
+	README.md       		--> this file
+	server.js       		--> config file for running the server with node and express
 ```
 
 ## Grunt Tasks
