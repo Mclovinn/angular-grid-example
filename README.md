@@ -17,12 +17,12 @@ To get you started you can simply clone the angular-grid-example repository and 
 
 Clone porject
 ```sh
-   git clone git@gitlab.com:agvarea/agvarea-app.git
+   git clone git@github.com:Mclovinn/angular-grid-example.git
 ```
 
 Move to folder of project
 ```sh
-   cd agvarea-app/
+   cd angular-grid-example/
 ```
 ### Install dependecies
 
@@ -72,7 +72,7 @@ If we open `index.html` we can see an interactive coverage report of the app.
 ## Directory Layout
 
 ```
-agvarea-app/                        --> all project files
+angular-grid-example/                        --> all project files
 	app/                            --> all of the source files for the application
 		js/                         --> all files of the app (template and logic)
 			controllers/            --> all controllers
