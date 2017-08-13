@@ -1,0 +1,14 @@
+<ul class="dynamic-grid" angular-grid="pics" ag-options="angularGridOptions" >
+     <li ng-repeat="pic in pics" class="grid img-loaded angular-grid-item">
+         <img src="{{pic.images.normal}}"
+            class="grid-img"/>
+        <a ng-click="openDescription(pic)" class="pic-description">
+            <h3><i class="fa fa-instagram" aria-hidden="true"></i>  {{ pic._embedded.uploader.name }}</h3>
+            <h4 ng-show="{{ pic.sonar_place.name }}"><i class="fa fa-map-marker" aria-hidden="true"></i>  {{ pic.sonar_place.name }}</h4>
+            <h3><i class="fa fa-heart-o" aria-hidden="true"></i>  {{ pic.likes }}</h3>
+        </a>
+     </li>
+</ul>
+<div align="center">
+    <button ng-click="loadMore()" class="btn load-more-button">Load More</button>
+</div>

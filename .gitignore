@@ -1,0 +1,6 @@
+node_modules/
+/app/js/public/
+Firefox*/
+Chrome*/
+coverage/
+npm-debug.log

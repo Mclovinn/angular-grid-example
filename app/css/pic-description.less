@@ -1,0 +1,75 @@
+.modal-body {
+
+	img {
+		border-radius: 1%;
+	}
+
+	.pic-description {
+		h3 {
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	        font-size: 30px;
+	        letter-spacing: -2px;
+	        position: relative;
+	        font-weight: 100;
+			text-align: center;
+		}
+
+		h4 {
+			font-size: 18px;
+			position: relative;
+		}
+
+		h5 {
+			font-size: 12px;
+			position: relative;
+			text-align: center;
+		}
+
+		.avatar {
+			width: 70px;
+			height: 70px;
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+		}
+	}
+
+	.close {
+		-moz-border-radius: 50%;
+		b-webkit-border-radius: 50%;
+		background: @black;
+		border-radius: 50%;
+		border: 1px solid @white;
+		color: @white;
+		filter: alpha(opacity=75);
+		font: normal 18px Verdana, sans-serif;
+		height: 25px;
+		line-height: 21px;
+		margin: 0;
+		opacity: 0.75;
+		padding: 0;
+		position: absolute;
+		right: -7px;
+		text-align: center;
+		top: -10px;
+		width: 25px;
+
+		&:hover {
+			filter: alpha(opacity=100);
+			opacity: 1;
+		}
+
+		span {
+			-webkit-padding-before: 2px;
+			-webkit-padding-start: 2px;
+			display: inline-block;
+			font-weight: 600;
+			height: 20px;
+			line-height: 18px;
+			position: relative;
+			text-align: center;
+			top: -1px;
+			width: 23px;
+		}
+	}
+}

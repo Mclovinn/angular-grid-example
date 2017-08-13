@@ -1,0 +1,39 @@
+<div class="modal-content">
+
+    <div class="modal-body">
+        <button ng-click="close()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <img src="{{picture.images.normal}}" class="img-responsive">
+            </div>
+            <div class="pic-description col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div align="center">
+                    <img src="{{ picture._embedded.uploader.avatar_url }}" class="avatar"/>
+                    <h3 ng-show="{{ picture._embedded.uploader.name }}">{{ picture._embedded.uploader.name }}</h3>
+                </div>
+                <h5 ng-show="{{ picture.sonar_place.name }}"><i class="fa fa-map-marker" aria-hidden="true"></i>  {{ picture.sonar_place.name }}</h5>
+                <h4>{{ picture.caption }}</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <div>
+            <h5 ng-show="{{ picture._embedded.uploader.social_connections.instagram }}">
+                {{ picture._embedded.uploader.social_connections.instagram.username }}<b> USERNAME</b>
+            </h5>
+            <h5 ng-show="{{ picture.original_source }}">
+                <a href="{{ picture.original_source }}">{{ picture.original_source }}</a><b> ORIGINAL_SOURCE</b>
+            </h5>
+            <h5 ng-show="{{ picture.date_submitted }}">
+                {{ picture.date_submitted | date }} <b> DATE_SUBMITTED</b>
+            </h5>
+            <h5 ng-show="{{ picture.status }}">
+                STATUS: {{ picture.status }}
+            </h5>
+        </div>
+    </div>
+
+</div>

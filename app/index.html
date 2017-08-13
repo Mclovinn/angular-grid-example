@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Agvarea test app">
+        <meta name="author" content="Agustin Varea">
+        <link rel="icon" href="images/favicon/favicon.ico">
+
+        <!-- Styles -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/main.layout.css" rel="stylesheet">
+
+        <title>agvarea-app</title>
+
+        <script type="text/javascript" src="js/public/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/public/angular-route/angular-route.min.js"></script>
+    </head>
+
+    <body role="document">
+
+        <!-- Fixed navbar -->
+        <!-- <header ng-include="'views/partials/header.view.html'"></header> -->
+        <!-- <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Agvarea App</a>
+                </div>
+
+                <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header> -->
+
+
+        <!-- Div to render partials -->
+        <main ng-app="angular-grid-example">
+            <div class="jumbotron">
+                <div align="left">
+                    <h2 class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <span>Angular Grid Example<span>
+                    </h2>
+                 </div>
+            </div>
+            <div class="pics-gallery">
+                <h2 class="gallery-title col-xs-8 col-sm-8 col-md-8 col-lg-8">Images Gallery</h2>
+                <div class="container">
+                    <div class="col-sm-12 gallery-container" >
+                        <div ng-view></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <hr>
+            <div class="site-footer text-center">
+                Developed by
+                <strong>
+                    <a href="https://gitlab.com/agvarea"
+                        class="site-footer__brand"
+                        target="_blank">
+                        Agustin Varea
+                    </a>
+                </strong>
+            </div>
+        </footer>
+
+
+        <!-- App configuration -->
+        <script src="js/config.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- Controllers  -->
+        <script src="js/controllers/main.controller.js"></script>
+        <script src="js/controllers/pic.description.controller.js"></script>
+
+        <!--Services -->
+        <script src="js/services/main.service.js"></script>
+
+        <!-- Libraries -->
+        <script src="js/public/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="js/public/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="js/public/angulargrid/angulargrid.min.js"></script>
+        <script src="js/public/ng-lodash/build/ng-lodash.min.js"></script>
+
+    </body>
+</html>

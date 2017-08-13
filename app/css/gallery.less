@@ -1,0 +1,136 @@
+.pics-gallery {
+
+    .dynamic-grid {
+    	display: none;
+    	position: relative;
+    }
+    .dynamic-grid.angular-grid {
+    	display: block;
+    }
+    .grid {
+    	-webkit-transition: all 400ms ease;
+    	background: @vintage-white;
+    	border-radius: 10px;
+    	box-sizing: border-box;
+    	list-style: none;
+    	overflow: hidden;
+    	position: absolute;
+    	transition: all 400ms ease;
+    }
+    .grid.ng-leave {
+    	-webkit-transition: all ease 400ms;
+    	transition: all ease 400ms;
+    }
+    .grid.ng-leave.ng-leave-active {
+    	-webkit-transform: scale(0.5);
+    	opacity: 0;
+    	transform: scale(0.5);
+    }
+    .grid.ng-enter {
+    	-webkit-transform: scale(0.5);
+    	-webkit-transition-delay: 500ms;
+    	-webkit-transition: all ease 400ms;
+    	opacity: 0;
+    	transform: scale(0.5);
+    	transition-delay: 500ms;
+    	transition: all ease 400ms;
+    }
+    .grid.ng-enter.ng-enter-active {
+    	-webkit-transform: scale(1);
+    	opacity: 1;
+    	transform: scale(1);
+    }
+    .grid-img {
+    	background-color: @vintage-white;
+    	opacity: 0;
+    	vertical-align: middle;
+    	visibility: hidden;
+    	width: 100%;
+    }
+    .grid-img.img-loaded {
+    	opacity: 1;
+    	visibility: visible;
+    }
+    .gallery-container {
+    	margin-top: 5%;
+    }
+    .gallery-title {
+        //margin-left: 5%;
+        letter-spacing: 3px;
+        width: 100%;
+        padding: 0 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 32px;
+        text-align: center;
+    }
+    .pic-description {
+        background: #fff;
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        border-radius: 10px;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        vertical-align: middle;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease-in-out;
+        -moz-transition: opacity 0.4s ease-in-out;
+        -ms-transition: opacity 0.4s ease-in-out;
+        -o-transition: opacity 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out;
+        &:hover {
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        	filter: alpha(opacity=80);
+        	opacity: 1;
+            cursor: pointer;
+        }
+
+        h3 {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            padding: 0 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        h4 {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            padding: 0 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .load-more-button {
+        display: block;
+        height: 120px;
+        width: 120px;
+        border-radius: 1500%;
+        color: #000;
+        font-weight: 800;
+        letter-spacing: 1px;
+        background-color: #EBEBEB;
+        border-color: #000;
+        border-width: 3px;
+        text-transform: uppercase;
+
+
+        &:hover {
+            color: @vintage-white;
+            background-color: @black;
+        }
+    }
+
+}
